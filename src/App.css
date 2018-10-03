@@ -1,14 +1,25 @@
 /* original Google maps API css 
   Always set the map height explicitly to define the size of the div
   * element that contains the map. */
-  #map {
+#map {
   height: 100vh;
+  width: 75%
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sidebar {
+  width: 25%;
+  /* height: 100vh; */
 }
 
 

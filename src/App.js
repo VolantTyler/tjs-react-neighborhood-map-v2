@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import axios from 'axios'
+import Sidebar from './Sidebar'
 
 class App extends Component {
 
@@ -103,6 +104,7 @@ class App extends Component {
   render() {
     return (
       <main>
+        <Sidebar />
         <div id="map"></div>
 
       </main>
