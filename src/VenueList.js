@@ -7,7 +7,7 @@ class VenueList extends Component {
 
     render() {
         return (
-            <ol className='venueList'>
+            <ol className='venue-list'>
                 {this.props.venues && 
                     this.props.venues.map((venue, referralId) => (
                         <ListItem key={referralId} {...venue}/>

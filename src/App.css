@@ -23,11 +23,19 @@ main {
 }
 
 input#search {
-  width: 100%
+  width: 100%;
+  margin: 1rem;
+}
+
+.venue-list {
+  padding: 1rem;
 }
 
 .list-item {
   list-style: none;
+  margin-top: 1rem;
+  padding: .5rem;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 /* original create-react-app css 
