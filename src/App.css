@@ -1,8 +1,9 @@
 /* original Google maps API css 
   Always set the map height explicitly to define the size of the div
   * element that contains the map. */
-  #map {
+#map {
   height: 100vh;
+  width: 75%
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {
@@ -11,6 +12,31 @@ html, body {
   padding: 0;
 }
 
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sidebar {
+  width: 25%;
+  /* height: 100vh; */
+}
+
+input#search {
+  width: 100%;
+  margin: 1rem;
+}
+
+.venue-list {
+  padding: 1rem;
+}
+
+.list-item {
+  list-style: none;
+  margin-top: 1rem;
+  padding: .5rem;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
 
 /* original create-react-app css 
 .App {
