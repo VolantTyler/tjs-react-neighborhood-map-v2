@@ -5,6 +5,7 @@ import './App.css';
 
 import axios from 'axios'
 import Sidebar from './Sidebar'
+import NavBar from './NavBar';
 
 class App extends Component {
 
@@ -104,9 +105,11 @@ class App extends Component {
   render() {
     return (
       <main>
-        <Sidebar />
-        <div id="map"></div>
-
+        {/* <NavBar /> */}
+          <Sidebar 
+            {...this.state}
+          />
+          <div id="map"></div>
       </main>
     );
   }

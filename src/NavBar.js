@@ -2,15 +2,15 @@
 
 import React, { Component } from 'react';
 
-class ListItem extends Component {
+class NavBar extends Component {
 
     render() {
         return (
-            <li className='list-item'>
-                {this.props.venue.name}
-            </li>
+            <div className='navBar'>
+                The Burgers of Bergen County
+            </div>
         )
     }
 }
 
-export default ListItem
+export default NavBar

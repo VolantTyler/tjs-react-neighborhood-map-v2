@@ -5,10 +5,16 @@ import VenueList from './VenueList'
 
 class Sidebar extends Component {
 
+    state = {
+        query: ''
+    }
     render() {
         return (
             <div className='sidebar'>
-                <VenueList />
+                <input placeholder='Search List'type={'serach'} id={'search'} value={this.state.query}></input>
+                <VenueList 
+                    {...this.props}
+                />
             </div>
         )
     }
